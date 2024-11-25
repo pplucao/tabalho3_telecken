@@ -24,7 +24,7 @@ header {
   display: flex;
   justify-content: center; /* Alinha horizontalmente no centro */
   align-items: center; /* Alinha verticalmente no centro */
-  background-image: url('lobo.webp');
+  background-image: url('img/lobo.webp');
   background-size: cover; /* Ajusta a imagem para cobrir todo o container */
   background-position: top center; /* Posiciona a imagem no topo e centralizada */
   width: 100%;
@@ -213,7 +213,7 @@ footer {
   justify-content: center;
   align-items: center;
   color: #D2691E;
-  background-image: url('lobo.webp');
+  background-image: url('img/lobo.webp');
   background-size: cover; /* Ajusta a imagem para cobrir todo o container */
   background-position: top center; /* Posiciona a imagem no topo e centralizada */
 }
