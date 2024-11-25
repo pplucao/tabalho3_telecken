@@ -101,9 +101,8 @@ header {
 }
 
 
-@media (max-width: 375px) {
+@media (max-width: 768px) {
   .galeria figure img {
-    width: 100%;
     height: auto;
     flex-direction: column;
   }
