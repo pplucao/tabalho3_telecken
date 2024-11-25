@@ -59,18 +59,18 @@ header {
   align-items: center;
   display: grid;
   flex-wrap: wrap;
-  width: auto;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   height: auto;
   width: 100%;
 }
-
 @media (max-width: 768px) {
   .galeria {
-    flex-direction: column;
+    grid-template-columns: 1fr;
   }
 }
 .galeria h2 {
   text-align: center;
+  grid-column: 1 / -1;
   width: 100%;
   margin-bottom: 20px;
   padding: 20px;
