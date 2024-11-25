@@ -1,0 +1,230 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    display: grid;
+    background-color:#556B2F;
+    width: 100%;
+    height: 90vh;
+    align-items: center;
+}
+@media (max-width:768px){
+  body {
+    width: 70%;
+    height: auto;
+    flex-direction: column;
+  }
+}
+h3 {
+    text-align: center;
+}
+header {
+  display: flex;
+  justify-content: center; /* Alinha horizontalmente no centro */
+  align-items: center; /* Alinha verticalmente no centro */
+  background-image: url('lobo.webp');
+  background-size: cover; /* Ajusta a imagem para cobrir todo o container */
+  background-position: top center; /* Posiciona a imagem no topo e centralizada */
+  width: 100%;
+  height: auto;
+}
+
+@media(max-width:375px){
+  header {
+    width: 70%;
+    height: auto;
+  }
+}
+.logo {
+  width: 100%; /* Tamanho do logo */
+  height: auto;
+}
+@media (max-width: 375px){
+  .logo {
+    width: 70%;
+    display: block;
+
+  }
+
+}
+.navigation {
+  display: flex;  
+  flex-direction: row;  
+  justify-content: space-evenly;
+  list-style: none;
+  padding: 1px;
+  width: 100%;
+}
+@media (max-width: 375px) { /* Ajuste este valor conforme necessário */
+    .navigation {
+      flex-direction: column; /* Muda para coluna em telas menores */
+      align-items: center; /* Centraliza os itens verticalmente */
+      width: 70%;
+    }
+  }
+  .navigation li{
+    padding: 1em;
+}
+.navigation a {
+    text-decoration: none;
+    padding: 1em;
+    color: rgb(9, 9, 9);
+}
+  .navigation a:hover {
+    background: #5c7631;
+}
+
+.galeria {
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  width: auto;
+  height: auto;
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .galeria {
+    width: 70%;
+    flex-direction: column;
+  }
+}
+.galeria h2 {
+  text-align: center;
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+.galeria figure{
+  text-align: center; /* Centraliza a imagem dentro de cada figure */
+  margin: auto; /* Adiciona margem entre as figuras */
+  vertical-align: top; /*alinha as imagens pela parte sup */
+  width: calc(33.33% - 20px); /* 3 imagens por linha */
+}
+.galeria figure img {
+  max-width: 100%;
+  height: auto; 
+}
+.galeria figcaption{
+  background-color: #D2691E; /* Cor de fundo da legenda */
+  border: 2px solid #D2691E; /* Borda de 2px ao redor da legenda */
+  border-radius: 5px; /* Bordas arredondadas */
+  margin: 0 auto; /* Centraliza a legenda abaixo da imagem */
+  padding: 10px; /* Espaçamento interno para o texto não ficar colado nas bordas */
+  display: grid;
+  width: fit-content; /* A largura será ajustada ao tamanho do texto */
+
+}
+.galeria figcaption:hover {
+  background-color: #555; /* Cor de fundo quando o mouse passar sobre a legenda */
+  border-color: #555; /* Altera a cor da borda quando hover */
+}
+
+
+@media (max-width: 375px) {
+  .galeria figure img {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+  }
+  .galeria figcaption {
+    font-size: 0.6rem; /* Reduz o tamanho da fonte da legenda */
+    padding: 5px; /* Ajusta o padding para telas menores */
+  }
+}
+
+.form {
+  margin-top: 30px;
+    display: grid;
+    width: 100%;
+    grid-template-columns:1fr 2fr;
+    justify-content: flex-end;
+    gap: 8px;
+    justify-items: stretch;
+    height: 60vh;
+}
+@media (max-width:768px){
+  .form {
+    grid-template-columns:1fr;
+    margin-top: 15px;
+    width: 70%;
+    height: auto;
+  }
+}
+.form img{
+  max-width: 100%;
+  min-width: 200px;
+  height: 60vh;
+  background-color: #ffffff;
+}
+
+#formulario {
+  padding: 30px;
+  background-color: #172f25;
+  color: #ffffff;
+  justify-items: center;
+  align-content: space-evenly; 
+}
+
+#formulario fieldset{
+  display: grid;
+  gap: 20px;
+}
+.input-box{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.1rem;
+  width: 50%;
+}
+.input-box input {
+  margin: 0.6rem;
+  padding: 0.8rem 1.2rem;
+  border-radius: 10px;
+  box-shadow: 1px 1px 6px #0000001c;
+}
+.input-box input:hover {
+  background-color: #eeeeee75;
+}
+button {
+  background-color: #0a1d0e;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px; /*borda dobrada*/
+  cursor: pointer; /*mouse muda quando está em cima */
+}
+html {
+  font-family: "Josefin Sans", sans-serif; 
+}
+footer p {
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  height: auto;
+}
+footer {
+  width: 100%;
+  height: 10vh;
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+  color: #D2691E;
+  background-image: url('lobo.webp');
+  background-size: cover; /* Ajusta a imagem para cobrir todo o container */
+  background-position: top center; /* Posiciona a imagem no topo e centralizada */
+}
+@media (max-width:768px) {
+  footer {
+    flex-direction: column;
+    width: 65%;
+    margin: 5px;
+    height: auto;
+  }
+  footer p {
+    width: auto;
+  }
+}
