@@ -57,7 +57,7 @@ header {
 
 .galeria {
   align-items: center;
-  display: flex;
+  display: grid;
   flex-wrap: wrap;
   width: auto;
   height: auto;
