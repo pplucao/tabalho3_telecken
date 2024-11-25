@@ -37,7 +37,7 @@ header {
   padding: 1px;
   width: 100%;
 }
-@media (max-width: 375px) { /* Ajuste este valor conforme necessário */
+@media (max-width: 768px) { /* Ajuste este valor conforme necessário */
     .navigation {
       flex-direction: column; /* Muda para coluna em telas menores */
       align-items: center; /* Centraliza os itens verticalmente */
