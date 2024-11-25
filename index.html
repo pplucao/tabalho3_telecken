@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Silkscreen:wght@400;700&display=swap');
+    </style>
+</head>
+<body>
+  <header>
+       <img src="img/logo.webp" alt="logo do site" class="fundo">
+  </header>
+    <nav> 
+      <ul class="navigation">
+        <li><a href="#">SOCIAL</a></li>
+        <li><a href="#">CAMISETAS</a></li>
+          <li><a href="#">BERMUDAS</a></li>
+          <li><a href="#">CALÇAS</a></li>
+          <li><a href="#">ACESSÓRIOS</a></li>
+      </ul>
+    </nav>
+    <main>
+      <section class="galeria">
+        <h2>PRODUTOS MAIS VENDIDOS</h2>
+        <figure>
+          <img src="img/1.webp" alt="Camiseta Lwing Hell">
+          <figcaption>Camiseta Lwing Hell Preta R$ 59,99</figcaption>
+        </figure>
+        <figure>
+          <img src="img/2.webp" alt="Corrente de prata">
+          <figcaption>Corrente de prata 18k R$150,89</figcaption>
+        </figure>
+        <figure>
+          <img src="img/3.webp" alt="Camiseta Vans Preta">
+          <figcaption>Camiseta Vans Preta R$ 119,99</figcaption>
+        </figure>
+        <figure>
+          <img src="img/4.webp" alt="Saia Marrom">
+          <figcaption>Saia Marrom R$ 76,99</figcaption>
+        </figure>
+        <figure>
+          <img src="img/5.webp" alt="Suéter Marrom Esverdeado">
+          <figcaption>Blazer Marrom Esverdeado R$ 249,99</figcaption>
+        </figure>
+        <figure>
+          <img src="img/6.webp" alt="Blusa Bege Feminina">
+          <figcaption>Blusa Bege R$ 59,99</figcaption>
+        </figure>
+      </section>
+      <section class="form">
+        <form id="formulario">
+          <h2>Formulário de contato</h2>
+          <fieldset>
+            <div class="input-box">
+              <label for="name">Nome</label>
+              <input type="text" class="form-control" id="nome" name="nome">
+              
+              <label for="email">Email</label>
+              <input type="text" class="form-control" id="email" name="email">
+              
+              <label for="telefone">Telefone:</label>
+              <input type="number" class="form-control" id="telefone" name="telefone">
+              
+              <label for="dataNascimento">Data de Nascimento:</label>
+              <input type="date" class="form-control" id="dataNascimento" name="dataNascimento">
+              
+              <label for="dataContato">Data do Contato:</label>
+              <input type="date" class="form-control" id="dataContato"name="dataContato">
+              
+              <label for="assunto">Assunto:</label>
+              <select class="form-select" id="assunto" name="assunto">
+                <option value="ouvidoria">Ouvidoria</option>
+                <option value="reclamacoes">Reclamações</option>
+                <option value="duvidas">Dúvidas</option>
+                <option value="devolucao">Devolução</option>
+              </select>
+            </div>
+            <div class="comentario">
+              <label for="comentario">Comentário:</label>
+              <textarea class="form-control" id="comentario" name="comentario" rows="3"></textarea>  
+              
+              <input type="checkbox" class="form-check-input" id="termos" name="termos">
+              <label for="termos">Aceito os termos e condições</label>
+              <button type="submit">Enviar</button>
+            </div>
+          </fieldset>
+        </form>
+        <img src="img/img.webp">
+      </section>
+    </main>
+      <footer>
+        <p>Avenida Major Carlos Pinto, 764 - Bairro Cidade Nova, Rio Grande - RS, 96211-021</p>
+        <p>(53) 98425-0976 | (53) 3230-0079</p>
+          <p>
+            <a href="#">WhatsApp</a>
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">LinkedIn</a>
+          </p>
+    </footer>
+</body>      
+</html>
