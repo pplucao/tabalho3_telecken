@@ -59,7 +59,7 @@ header {
   align-items: center;
   display: grid;
   flex-wrap: wrap;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns:repeat(3, 1fr);
   height: auto;
   width: 100%;
 }
